@@ -48,3 +48,45 @@ git branch -av
 git pull upstream master
 ```
 
+## 3. Some useful commands
+
+(1) check the **log** files
+
+```bash
+git log
+```
+
+(2) check the **status** of the local repos.
+
+```bash
+git status
+```
+
+(3) remove files from the server and the disk
+
+```bash
+# remove both
+git rm file1.txt
+git commit -m "remove file1.txt"
+
+# remove file remotely
+git rm --cached file1.txt
+git commit -m "remove file1.txt in the web"
+```
+
+(4) check the current authentication (HTTPS vs. SSH)
+
+```bash
+git remote -v
+# change from SSH to HTTPS
+git remote set-url origin https://YOURURL
+# change from HTTPS to SSH
+git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
+```
+
+(5) Caching your github personal access token (PAT) , generate your PAT first in the web (Settings -> developer settings -> personal access token)
+
+```bash
+git config --global credential.helper osxkeychain
+```
+
