@@ -26,7 +26,7 @@ git push # publish your local commits to the web (user name and password may be 
 git pull
 ```
 
-## 2. Communication between local and upstream repository
+## 2. Communication between local and upstream repositories
 
 If your repository is forked from somewhere else or inherited from an upstream repository, you need to synchronize your local repository with the original one. 
 
