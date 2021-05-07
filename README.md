@@ -48,6 +48,15 @@ git branch -av
 git pull upstream master
 ```
 
+You may sometimes want to overwrite local changes to fix the git error "Your local changes to the following files will be overwritten by merge":
+
+```bash
+git reset -- hard
+git pull upstream master
+```
+
+
+
 ## 3. Some useful commands
 
 (1) check the **log** files
