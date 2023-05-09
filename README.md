@@ -98,4 +98,11 @@ git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
 ```bash
 git config --global credential.helper osxkeychain
 ```
+(5) Revert some changes
 
+You can undo the last 5 commits of the currently checked out branch via the following commands.
+
+```bash
+git reset --hard HEAD~5
+git push --force
+```
